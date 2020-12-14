@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Biblioteca Mário de Andrade</title>
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo mr-auto"><a>BMA</a></h1>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="cadastrar.html">Cadastrar</a></li>
+          <li><a href="editar.html">Editar</a></li>
+          <li><a href="excluir.html">Excluir</a></li>
+          <li><a href="editarcat.html">Editar Categorias</a></li>
+          <li><a href="usuario.html">Usuários</a></li>
+          <li><a href="registrar.html">Empréstimo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+        <ol>
+          <li><a>BIBLIOTECA MÁRIO DE ANDRADE</a></li>
+        </ol>
+        <h2>Cadastrar</h2>
+      </div>
+    </section>
+    <section class="inner-page">
+      <div class="container">
+        <form method="POST" action="cadastrar.php">
+          <div class="form-row">
+            <div class="form-group col-md-3">
+              <label for="isbn">ISBN</label>
+              <input name="isbn" type="text" class="form-control" id="isbn">
+            </div>
+            <div class="form-group col-md-9">
+              <label for="titulo">Título</label>
+              <input name="titulo" type="text" class="form-control" id="titulo" placeholder="Título do Livro">
+            </div>
+            <div class="form-group col-md-8">
+              <label for="autor">Autor</label>
+              <input name="autor" type="text" class="form-control" id="autor" placeholder="Nome do Autor">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="tema">Tema</label>
+              <input name="tema" type="text" class="form-control" id="tema" placeholder="Tema do Livro">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="data">Ano de Publicação</label>
+              <input name="data" type="year" class="form-control" id="data">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="cat">Categoria</label>
+              <select name="cat" id="cat" class="form-control">
+                <option selected>Selecione...</option>
+                <option value='autoajuda'>Autoajuda</option>
+                <option value="aventura">Aventura</option>
+                <option value="biografico">Biográfico</option>
+                <option value="cientifico">Científico</option>
+                <option value="contos">Contos</option>
+                <option value="cronica">Crônica</option>
+                <option value="didatico">Didático</option>
+                <option value="ensaio">Ensaio</option>
+                <option value="epico">Épico</option>
+                <option value="fantasia">Fantasia</option>
+                <option value="ficcaocientifica">Ficção Científica</option>
+                <option value="infantil">Infantil</option>
+                <option value="literatura">Literatura</option>
+                <option value="poesia">Poesia</option>
+                <option value="romance">Romance</option>
+                <option value="terror">Terror</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3">
+              <label for="qtde">Quantidade de cópias</label>
+              <input name="qtde" type="number" class="form-control" id="qtde">
+            </div>
+          </div>
+          <br>
+          <input type="submit" class="btn btn-outline-dark btn-lg btn-block" value="Cadastrar livro">
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="footer-info">
+              <h3>BMA</h3>
+              <p>
+                <strong>Coleção de Artes, Coleção Geral , Coleção São Paulo, Coleção de Obras Raras, Mapoteca, Sala Infantil e
+                  Sala Silenciosa</strong><br>
+                Rua da Consolação, 94 – Centro – 01302-000 – São Paulo – SP<br><br>
+              </p>
+              <strong>Coleção Circulante, Sala de estudos e Sala de Leitura</strong><br>
+              Av. São Luis, 235 – Centro – 01046-001 – São Paulo – SP<br><br>
+              </p>
+              <p>
+                <strong>Sala de Atualidades e Multimeios</strong><br>
+                Rua Dr. Bráulio Gomes, 125/139 – Centro<br><br>
+                <strong>Telefone:</strong> (xx)xxxx-xxxx<br>
+                <strong>Email:</strong> bma@prefeitura.sp.gov.br<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
